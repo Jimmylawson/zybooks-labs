@@ -1,0 +1,17 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+
+
+int main(){
+    ifstream fileName;
+    string myFile;
+
+    fileName.open("wordFile.txt");
+    if(!fileName.is_open()){
+        cout << "Sorry couldn't open this file" << endl;
+    }
+    fileName >> myFile;
+    while (!fileName)
+}
